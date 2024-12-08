@@ -5,19 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Auto-Spotter - Code</title>
   <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.1.0/skulpt.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.1.0/skulpt-stdlib.min.js"></script>
-  <script>
-    function runPython() {
-      let prog = document.getElementById("pythonCode").value;
-      let output = document.getElementById("output");
-      output.innerHTML = "";
-      Sk.configure({ output: text => output.innerHTML += text + "<br>" });
-      Sk.importMainWithBody("<stdin>", false, prog).catch(err => {
-        output.innerHTML += `<span style="color:red;">${err}</span>`;
-      });
-    }
-  </script>
 </head>
 <body>
   <header>
@@ -34,14 +21,24 @@
     </nav>
   </header>
   <main>
-    <h2>Python Code</h2>
+    <h2>Code Example</h2>
     <div class="code-container">
-      <pre><textarea id="pythonCode" rows="10">print("Hello, Auto-Spotter!")</textarea></pre>
+      <pre>
+# Auto-Spotter Example Code
+# This code simulates the operation of the auto-spotter.
+
+import time
+
+def auto_spotter():
+    print("Starting Auto-Spotter System...")
+    for i in range(5):
+        print(f"Checking system status... Step {i+1}")
+        time.sleep(1)
+    print("System is ready for operation!")
+
+auto_spotter()
+      </pre>
     </div>
-    <div style="text-align: center;">
-      <button onclick="runPython()">Run Code</button>
-    </div>
-    <div id="output" class="code-container"></div>
   </main>
   <footer>
     <p>&copy; 2024 Auto-Spotter Team. All rights reserved.</p>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workout Equipment Project</title>
+  <title>Auto-Spotter Project</title>
   <style>
     * {
       box-sizing: border-box;
@@ -12,75 +12,112 @@
       font-family: Arial, sans-serif;
     }
     body {
-      background-color: #f3f3f3;
-      color: #333;
+      background-color: #111;
+      color: #fff;
+      line-height: 1.6;
     }
     .container {
       max-width: 1200px;
       margin: 20px auto;
       padding: 20px;
-      background: #fff;
+      background: #222;
       border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
     }
     header {
       text-align: center;
-      padding: 40px 20px;
-      background: linear-gradient(135deg, #333, #555);
+      padding: 50px 20px;
+      background: linear-gradient(135deg, #900, #c00);
       color: #fff;
     }
     header h1 {
-      font-size: 2.5em;
+      font-size: 3em;
       margin-bottom: 10px;
     }
     header p {
       font-size: 1.2em;
-      margin-bottom: 20px;
     }
     nav ul {
       display: flex;
       justify-content: center;
       list-style: none;
-      margin-bottom: 20px;
+      margin: 20px 0;
     }
     nav ul li {
       margin: 0 15px;
     }
     nav ul li a {
-      color: #555;
+      color: #fff;
       text-decoration: none;
       font-weight: bold;
     }
     nav ul li a:hover {
-      color: #333;
+      color: #900;
     }
-    .banner-section {
+    section {
+      margin: 40px 0;
+    }
+    section h2 {
+      font-size: 2em;
+      color: #c00;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    section p {
+      text-align: center;
+      font-size: 1.2em;
+    }
+    .team-section {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 20px;
-      margin-top: 20px;
+      margin: 40px 0;
     }
-    .banner {
-      flex: 1;
-      padding: 20px;
-      background-color: #eee;
+    .team-member {
+      text-align: center;
+      max-width: 200px;
+    }
+    .team-member img {
+      width: 100%;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+    .team-member h3 {
+      font-size: 1.2em;
+      margin: 5px 0;
+    }
+    .team-member p {
+      font-size: 0.9em;
+      color: #aaa;
+    }
+    .documentation {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+    .doc-item {
+      background: #333;
+      padding: 15px;
       border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
       text-align: center;
     }
-    .banner h2 {
-      font-size: 1.5em;
-      margin-bottom: 10px;
-      color: #333;
+    .doc-item a {
+      color: #900;
+      text-decoration: none;
+      font-weight: bold;
     }
-    .banner p {
-      color: #666;
+    .doc-item a:hover {
+      color: #c00;
     }
     footer {
       text-align: center;
       padding: 20px;
+      background: #000;
       margin-top: 40px;
-      background: #333;
-      color: #fff;
+      color: #aaa;
     }
     footer p {
       font-size: 0.9em;
@@ -89,67 +126,104 @@
 </head>
 <body>
   <div class="container">
-    <!-- Header with Hero Section -->
+    <!-- Header -->
     <header>
-      <h1>Workout Equipment Design Project</h1>
-      <p>Enhancing your fitness journey with innovative equipment</p>
+      <h1>Auto-Spotter Project</h1>
+      <p>Revolutionizing Gym Safety with Automated Spotting Technology</p>
       <nav>
         <ul>
           <li><a href="#homepage">Homepage</a></li>
-          <li><a href="#code">Code</a></li>
-          <li><a href="#about">About the Team</a></li>
+          <li><a href="#description">Description</a></li>
+          <li><a href="#demos">Demos</a></li>
           <li><a href="#documentation">Documentation</a></li>
-          <li><a href="#demo">Demo</a></li>
+          <li><a href="#code">Code</a></li>
+          <li><a href="#team">Meet the Team</a></li>
         </ul>
       </nav>
     </header>
 
-    <!-- Banner Section -->
-    <div class="banner-section">
-      <div class="banner">
-        <h2>Features</h2>
-        <p>Explore the unique aspects of our workout equipment.</p>
-      </div>
-      <div class="banner">
-        <h2>Specifications</h2>
-        <p>Get technical details on design and functionality.</p>
-      </div>
-      <div class="banner">
-        <h2>Benefits</h2>
-        <p>Discover how our design improves your workouts.</p>
-      </div>
-    </div>
-
-    <!-- Placeholder Sections for Pages -->
+    <!-- Sections -->
     <section id="homepage">
       <h2>Homepage</h2>
-      <p>Welcome to our project homepage.</p>
+      <p>Welcome to the Auto-Spotter Project homepage. Explore our innovation!</p>
     </section>
 
-    <section id="code">
-      <h2>Code</h2>
-      <p>Find the source code for our project here.</p>
+    <section id="description">
+      <h2>Description</h2>
+      <p>
+        The Auto-Spotter is a groundbreaking piece of gym equipment designed to
+        ensure safety during weightlifting. Combining mechanical precision with
+        advanced technology, our solution eliminates the risks of lifting
+        heavy weights alone.
+      </p>
     </section>
 
-    <section id="about">
-      <h2>About the Team</h2>
-      <p>Learn more about the team behind the project.</p>
+    <section id="demos">
+      <h2>Demos</h2>
+      <p>Check out the current stage of our project in action!</p>
+      <video controls style="display: block; margin: 20px auto; width: 80%;">
+        <source src="demo-video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
     </section>
 
     <section id="documentation">
       <h2>Documentation</h2>
-      <p>Detailed documentation for the project.</p>
+      <div class="documentation">
+        <div class="doc-item">
+          <a href="executive-summary.pdf" target="_blank">Executive Summary</a>
+        </div>
+        <div class="doc-item">
+          <a href="problem-statement.pdf" target="_blank">Problem Statement</a>
+        </div>
+        <div class="doc-item">
+          <a href="engineering-requirements.pdf" target="_blank">Engineering Requirements</a>
+        </div>
+        <div class="doc-item">
+          <a href="design-approach.pdf" target="_blank">Design Approach</a>
+        </div>
+      </div>
     </section>
 
-    <section id="demo">
-      <h2>Demo</h2>
-      <p>Check out a demonstration of our equipment in action.</p>
+    <section id="code">
+      <h2>Code</h2>
+      <p>Find the source code for the Auto-Spotter on our <a href="https://github.com/project-repo" target="_blank">GitHub repository</a>.</p>
+    </section>
+
+    <section id="team">
+      <h2>Meet the Team</h2>
+      <div class="team-section">
+        <div class="team-member">
+          <img src="team1.jpg" alt="Team Member 1">
+          <h3>John Doe</h3>
+          <p>Project Manager</p>
+        </div>
+        <div class="team-member">
+          <img src="team2.jpg" alt="Team Member 2">
+          <h3>Jane Smith</h3>
+          <p>Lead Engineer</p>
+        </div>
+        <div class="team-member">
+          <img src="team3.jpg" alt="Team Member 3">
+          <h3>Bob Johnson</h3>
+          <p>Software Developer</p>
+        </div>
+        <div class="team-member">
+          <img src="advisor.jpg" alt="Advisor">
+          <h3>Dr. Emily Brown</h3>
+          <p>Project Advisor</p>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2024 Workout Equipment Design Project. All rights reserved.</p>
+      <p>&copy; 2024 Auto-Spotter Team. All rights reserved.</p>
     </footer>
+  </div>
+</body>
+</html>
+
   </div>
 </body>
 </html>

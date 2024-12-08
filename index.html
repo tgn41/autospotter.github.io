@@ -68,28 +68,26 @@
       font-size: 1.2em;
     }
     .team-section {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
       margin: 40px 0;
     }
     .team-member {
-      text-align: center;
-      max-width: 200px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
     }
     .team-member img {
-      width: 100%;
+      width: 150px;
       border-radius: 50%;
-      margin-bottom: 10px;
     }
-    .team-member h3 {
-      font-size: 1.2em;
-      margin: 5px 0;
+    .team-member div {
+      margin-left: 20px;
     }
-    .team-member p {
-      font-size: 0.9em;
-      color: #aaa;
+    .team-member:nth-child(2n) {
+      flex-direction: row-reverse;
+    }
+    .team-member:nth-child(2n) div {
+      margin-left: 0;
+      margin-right: 20px;
     }
     .documentation {
       display: flex;
@@ -193,25 +191,49 @@
     <section id="team">
       <h2>Meet the Team</h2>
       <div class="team-section">
+        <!-- Charles Clark -->
         <div class="team-member">
-          <img src="team1.jpg" alt="Team Member 1">
-          <h3>John Doe</h3>
-          <p>Project Manager</p>
+          <img src="charles-clark.jpg" alt="Charles Clark">
+          <div>
+            <h3>Charles Clark</h3>
+            <p><strong>Team Lead:</strong> Charles oversees the project's overall progress and ensures that all subsystems integrate seamlessly into the Auto-Spotter design. With a passion for leadership and innovation, he is committed to delivering a reliable and efficient product.</p>
+          </div>
         </div>
+
+        <!-- James Rigney -->
         <div class="team-member">
-          <img src="team2.jpg" alt="Team Member 2">
-          <h3>Jane Smith</h3>
-          <p>Lead Engineer</p>
+          <img src="james-rigney.jpg" alt="James Rigney">
+          <div>
+            <h3>James Rigney</h3>
+            <p><strong>Winch and Pulley Subsystem Lead:</strong> James is responsible for designing and implementing the winch and pulley mechanism, ensuring the system operates with precision and safety under load conditions.</p>
+          </div>
         </div>
+
+        <!-- Dylan Crum -->
         <div class="team-member">
-          <img src="team3.jpg" alt="Team Member 3">
-          <h3>Bob Johnson</h3>
-          <p>Software Developer</p>
+          <img src="dylan-crum.jpg" alt="Dylan Crum">
+          <div>
+            <h3>Dylan Crum</h3>
+            <p><strong>Winch and Pulley System Support:</strong> Dylan works closely with James to ensure the winch and pulley subsystem is both robust and reliable. He specializes in troubleshooting and optimizing mechanical components.</p>
+          </div>
         </div>
+
+        <!-- Brooke Molen -->
         <div class="team-member">
-          <img src="advisor.jpg" alt="Advisor">
-          <h3>Dr. Emily Brown</h3>
-          <p>Project Advisor</p>
+          <img src="brooke-molen.jpg" alt="Brooke Molen">
+          <div>
+            <h3>Brooke Molen</h3>
+            <p><strong>Accelerometer Subsystem Lead:</strong> Brooke leads the design of the accelerometer subsystem, ensuring accurate motion sensing and integration with the Auto-Spotter's safety mechanisms.</p>
+          </div>
+        </div>
+
+        <!-- Tyce Neu -->
+        <div class="team-member">
+          <img src="tyce-neu.jpg" alt="Tyce Neu">
+          <div>
+            <h3>Tyce Neu</h3>
+            <p><strong>Machine Health Subsystem Lead:</strong> Tyce is responsible for the machine health subsystem, focusing on diagnostics and maintenance features to keep the Auto-Spotter running efficiently and reliably.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -220,10 +242,6 @@
     <footer>
       <p>&copy; 2024 Auto-Spotter Team. All rights reserved.</p>
     </footer>
-  </div>
-</body>
-</html>
-
   </div>
 </body>
 </html>

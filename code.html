@@ -1,1 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auto-Spotter - Code</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.1.0/skulpt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/skulpt/1.1.0/skulpt-stdlib.min.js"></script>
+  <script>
+    function runPython() {
+      let prog = document.getElementById("pythonCode").value;
+      let output = document.getElementById("output");
+      output.innerHTML = "";
+      Sk.configure({ output: text => output.innerHTML += text + "<br>" });
+      Sk.importMainWithBody("<stdin>", false, prog).catch(err => {
+        output.innerHTML += `<span style="color:red;">${err}</span>`;
+      });
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Auto-Spotter Code</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="description.html">Description</a></li>
+        <li><a href="demos.html">Demos</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="team.html">Meet the Team</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Python Code</h2>
+    <textarea id="pythonCode" rows="10" cols="60">print("Hello, Auto-Spotter!")</textarea>
+    <br>
+    <button onclick="runPython()">Run Code</button>
+    <div id="output" style="background:#333;color:#fff;padding:10px;margin-top:10px;"></div>
+  </main>
+  <footer>
+    <p>&copy; 2024 Auto-Spotter Team. All rights reserved.</p>
+  </footer>
+</body>
+</html>
 

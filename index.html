@@ -3,245 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto-Spotter Project</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-    }
-    body {
-      background-color: #111;
-      color: #fff;
-      line-height: 1.6;
-    }
-    .container {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #222;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
-    }
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      background: linear-gradient(135deg, #900, #c00);
-      color: #fff;
-    }
-    header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
-    }
-    header p {
-      font-size: 1.2em;
-    }
-    nav ul {
-      display: flex;
-      justify-content: center;
-      list-style: none;
-      margin: 20px 0;
-    }
-    nav ul li {
-      margin: 0 15px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav ul li a:hover {
-      color: #900;
-    }
-    section {
-      margin: 40px 0;
-    }
-    section h2 {
-      font-size: 2em;
-      color: #c00;
-      text-align: center;
-      margin-bottom: 20px;
-    }
-    section p {
-      text-align: center;
-      font-size: 1.2em;
-    }
-    .team-section {
-      margin: 40px 0;
-    }
-    .team-member {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-    .team-member img {
-      width: 150px;
-      border-radius: 50%;
-    }
-    .team-member div {
-      margin-left: 20px;
-    }
-    .team-member:nth-child(2n) {
-      flex-direction: row-reverse;
-    }
-    .team-member:nth-child(2n) div {
-      margin-left: 0;
-      margin-right: 20px;
-    }
-    .documentation {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      gap: 20px;
-    }
-    .doc-item {
-      background: #333;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-      text-align: center;
-    }
-    .doc-item a {
-      color: #900;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .doc-item a:hover {
-      color: #c00;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #000;
-      margin-top: 40px;
-      color: #aaa;
-    }
-    footer p {
-      font-size: 0.9em;
-    }
-  </style>
+  <title>Auto-Spotter - Homepage</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <!-- Header -->
-    <header>
-      <h1>Auto-Spotter Project</h1>
-      <p>Revolutionizing Gym Safety with Automated Spotting Technology</p>
-      <nav>
-        <ul>
-          <li><a href="#homepage">Homepage</a></li>
-          <li><a href="#description">Description</a></li>
-          <li><a href="#demos">Demos</a></li>
-          <li><a href="#documentation">Documentation</a></li>
-          <li><a href="#code">Code</a></li>
-          <li><a href="#team">Meet the Team</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <!-- Sections -->
-    <section id="homepage">
-      <h2>Homepage</h2>
-      <p>Welcome to the Auto-Spotter Project homepage. Explore our innovation!</p>
-    </section>
-
-    <section id="description">
-      <h2>Description</h2>
-      <p>
-        The Auto-Spotter is a groundbreaking piece of gym equipment designed to
-        ensure safety during weightlifting. Combining mechanical precision with
-        advanced technology, our solution eliminates the risks of lifting
-        heavy weights alone.
-      </p>
-    </section>
-
-    <section id="demos">
-      <h2>Demos</h2>
-      <p>Check out the current stage of our project in action!</p>
-      <video controls style="display: block; margin: 20px auto; width: 80%;">
-        <source src="demo-video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </section>
-
-    <section id="documentation">
-      <h2>Documentation</h2>
-      <div class="documentation">
-        <div class="doc-item">
-          <a href="executive-summary.pdf" target="_blank">Executive Summary</a>
-        </div>
-        <div class="doc-item">
-          <a href="problem-statement.pdf" target="_blank">Problem Statement</a>
-        </div>
-        <div class="doc-item">
-          <a href="engineering-requirements.pdf" target="_blank">Engineering Requirements</a>
-        </div>
-        <div class="doc-item">
-          <a href="design-approach.pdf" target="_blank">Design Approach</a>
-        </div>
-      </div>
-    </section>
-
-    <section id="code">
-      <h2>Code</h2>
-      <p>Find the source code for the Auto-Spotter on our <a href="https://github.com/project-repo" target="_blank">GitHub repository</a>.</p>
-    </section>
-
-    <section id="team">
-      <h2>Meet the Team</h2>
-      <div class="team-section">
-        <!-- Charles Clark -->
-        <div class="team-member">
-          <img src="charles-clark.jpg" alt="Charles Clark">
-          <div>
-            <h3>Charles Clark</h3>
-            <p><strong>Team Lead:</strong> Charles oversees the project's overall progress and ensures that all subsystems integrate seamlessly into the Auto-Spotter design. With a passion for leadership and innovation, he is committed to delivering a reliable and efficient product.</p>
-          </div>
-        </div>
-
-        <!-- James Rigney -->
-        <div class="team-member">
-          <img src="james-rigney.jpg" alt="James Rigney">
-          <div>
-            <h3>James Rigney</h3>
-            <p><strong>Winch and Pulley Subsystem Lead:</strong> James is responsible for designing and implementing the winch and pulley mechanism, ensuring the system operates with precision and safety under load conditions.</p>
-          </div>
-        </div>
-
-        <!-- Dylan Crum -->
-        <div class="team-member">
-          <img src="dylan-crum.jpg" alt="Dylan Crum">
-          <div>
-            <h3>Dylan Crum</h3>
-            <p><strong>Winch and Pulley System Support:</strong> Dylan works closely with James to ensure the winch and pulley subsystem is both robust and reliable. He specializes in troubleshooting and optimizing mechanical components.</p>
-          </div>
-        </div>
-
-        <!-- Brooke Molen -->
-        <div class="team-member">
-          <img src="brooke-molen.jpg" alt="Brooke Molen">
-          <div>
-            <h3>Brooke Molen</h3>
-            <p><strong>Accelerometer Subsystem Lead:</strong> Brooke leads the design of the accelerometer subsystem, ensuring accurate motion sensing and integration with the Auto-Spotter's safety mechanisms.</p>
-          </div>
-        </div>
-
-        <!-- Tyce Neu -->
-        <div class="team-member">
-          <img src="tyce-neu.jpg" alt="Tyce Neu">
-          <div>
-            <h3>Tyce Neu</h3>
-            <p><strong>Machine Health Subsystem Lead:</strong> Tyce is responsible for the machine health subsystem, focusing on diagnostics and maintenance features to keep the Auto-Spotter running efficiently and reliably.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2024 Auto-Spotter Team. All rights reserved.</p>
-    </footer>
-  </div>
+  <header>
+    <h1>Auto-Spotter Project</h1>
+    <p>Revolutionizing Gym Safety with Automated Spotting Technology</p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Homepage</a></li>
+        <li><a href="description.html">Description</a></li>
+        <li><a href="demos.html">Demos</a></li>
+        <li><a href="documentation.html">Documentation</a></li>
+        <li><a href="code.html">Code</a></li>
+        <li><a href="team.html">Meet the Team</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h2>Welcome to the Auto-Spotter Project</h2>
+    <p>Explore our innovation and learn about how we're transforming gym safety through automation!</p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Auto-Spotter Team. All rights reserved.</p>
+  </footer>
 </body>
 </html>

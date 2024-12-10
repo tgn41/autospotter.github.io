@@ -3,32 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Auto-Spotter - Project Description</title>
+  <title>Description</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Auto-Spotter Project</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Homepage</a></li>
-        <li><a href="description.html">Description</a></li>
-        <li><a href="demos.html">Demos</a></li>
-        <li><a href="documentation.html">Documentation</a></li>
-        <li><a href="code.html">Code</a></li>
-        <li><a href="team.html">Meet the Team</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <h2>Project Description</h2>
-    <p><strong>Executive Summary:</strong> The Auto-Spotter is a state-of-the-art system designed to improve gym safety through automated spotting technology. It integrates advanced sensors, machine health diagnostics, and a winch and pulley mechanism to assist users during workouts.</p>
-    <p><strong>Constraints and Requirements:</strong> The system must be reliable, easy to install, and compatible with a range of gym equipment. It should also feature user-friendly controls and robust safety mechanisms.</p>
-    <p><strong>Design Approach:</strong> The design leverages accelerometers to detect motion, a robust winch and pulley system for load-bearing, and a machine health subsystem for real-time diagnostics.</p>
-  </main>
-  <footer>
-    <p>&copy; 2024 Auto-Spotter Team. All rights reserved.</p>
-  </footer>
+  <div class="container">
+    <header>
+      <h1>Project Description</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Homepage</a></li>
+          <li><a href="description.html">Description</a></li>
+          <li><a href="demos.html">Demos</a></li>
+          <li><a href="documents.html">Documents</a></li>
+          <li><a href="code.html">Code</a></li>
+          <li><a href="team.html">Meet the Team</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>About the Auto-Spotter</h2>
+      <p style="margin-top: 20px; line-height: 1.6;">
+        The Auto-Spotter is an advanced safety device designed for weightlifting applications, particularly bench pressing. 
+        The system integrates an accelerometer, vibration sensors, and infrared pyrometers to monitor barbell movement 
+        and machine health in real time. Using these inputs, the Auto-Spotter controls electric hoists to prevent unsafe lifts, 
+        catch failed reps, and rerack weights automatically. This functionality ensures consistent safety and operational reliability for users.
+      </p>
+      <p style="margin-top: 20px; line-height: 1.6;">
+        The system is powered by a Raspberry Pi 4 Model B, which processes sensor data and executes automated responses, 
+        such as locking the winch or lifting a barbell back into a rerackable position. A wireless Bluetooth accelerometer 
+        attached to the barbell tracks its orientation, speed, and position without obstructing the lifting experience. 
+        With a durable pulley mechanism and robust safety features, including an emergency stop, the Auto-Spotter is designed to integrate 
+        seamlessly into beginner-friendly gym environments while prioritizing user safety and equipment health.
+      </p>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Team Bacon's Auto-Spotter Project. All rights reserved.</p>
+    </footer>
+  </div>
 </body>
 </html>
-
